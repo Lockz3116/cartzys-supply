@@ -74,7 +74,7 @@ const faqs = [
   },
   {
     question: 'How will I receive access to the vendors?',
-    answer: 'After you complete your purchase the vendor will be emailed to you immediately and appear on the confirmation page. Make sure to click the “Download” button to get access'
+    answer: 'After you complete your purchase the vendor will be emailed to you immediately. Make sure to click the “Download” button to get access'
   },
   {
     question: 'Do the vendors ship worldwide?',
@@ -82,7 +82,7 @@ const faqs = [
   },
   {
     question: 'What if i never got the links?',
-    answer: 'The vendor links are sent to your email and the confirmation page immediately after purchasing. Make sure you click the “Download” button to get access. If in a rare case you didn’t receive them, please contact @cabsells on Instagram. Please provide proof of purchase and I will be happy to send them to you immediately!'
+    answer: 'The vendor links are sent to your email and the confirmation page immediately after purchasing. Make sure you click the “Download” button to get access. If in a rare case you didn’t receive them, please contact @cartzys on Instagram. Please provide proof of purchase and I will be happy to send them to you immediately!'
   },
   {
     question: 'How much do the vendors charge for products?',
