@@ -1,6 +1,6 @@
-// Fully working CartzysPage - black layout, real products, fixed styles
+// Fully working CartzysPage - now with fixed styled FAQ icons and full product set
 import React, { useState, useEffect } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { HelpCircle, ChevronDown } from 'lucide-react';
 
 const products = [
   {
@@ -62,7 +62,7 @@ const products = [
 const faqs = [
   {
     question: 'How will I receive the links?',
-    answer: 'Once your purchase, the vendor links are INSTANTLY sent through email'
+    answer: 'Once you purchase, the vendor links are INSTANTLY sent through email'
   },
   {
     question: 'Whats does buying a vendor get me?',
@@ -110,7 +110,7 @@ export default function CartzysPage() {
       </div>
 
       <header className="text-center py-10">
-        <img src="/images/logo.png" alt="Cab Sells Logo" className="mx-auto w-24 mb-2" />
+        <img src="/images/logo.png" alt="Cartzys Logo" className="mx-auto w-24 mb-2" />
         <h1 className="text-lg font-semibold text-gray-300">Premium Vendors • Premium Discord</h1>
       </header>
 
@@ -135,24 +135,19 @@ export default function CartzysPage() {
           ))}
         </div>
 
-        <section className="mt-20 max-w-2xl mx-auto px-4">
-          <h3 className="text-center text-lg font-bold mb-6 uppercase tracking-wide text-white">
-            FREQUENTLY ASKED.
-          </h3>
+        <section className="mt-20 max-w-2xl mx-auto">
+          <h3 className="text-center text-lg font-semibold mb-6 uppercase text-white tracking-wide">FREQUENTLY ASKED.</h3>
           <div className="space-y-4">
             {faqs.map((f, idx) => (
-              <details
-                key={idx}
-                className="group border-b border-zinc-700 pb-4"
-              >
-                <summary className="cursor-pointer flex items-start gap-2 text-white font-semibold text-sm justify-between">
-                  <span className="flex items-center gap-2">
-                    <span className="text-lg">❓</span> {f.question}
-                  </span>
+              <details key={idx} className="bg-zinc-800 p-4 rounded-md">
+                <summary className="cursor-pointer font-medium text-white flex justify-between items-center gap-2">
+                  <div className="flex items-center gap-2">
+                    <HelpCircle className="w-4 h-4 text-blue-400" />
+                    <span>{f.question}</span>
+                  </div>
+                  <ChevronDown className="w-4 h-4 text-gray-500" />
                 </summary>
-                <p className="mt-2 text-sm text-gray-300 leading-relaxed">
-                  {f.answer}
-                </p>
+                <p className="text-sm text-gray-400 mt-2 leading-relaxed">{f.answer}</p>
               </details>
             ))}
           </div>
@@ -165,4 +160,3 @@ export default function CartzysPage() {
     </div>
   );
 }
-
