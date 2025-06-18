@@ -7,7 +7,7 @@ const products = [
     title: 'Resell Blueprint: Full Course',
     image: '/images/resell-blueprint.png',
     price: '$99.99',
-    original: '$149.00',
+    original: '$199.99',
     subtitle: '🔥 Best Seller',
     stripe: 'https://buy.stripe.com/aFa14f1MM2rN5TNdvQbfO01',
     details: 'Full course teaching you how to flip products from scratch using real suppliers. Updated monthly.'
@@ -16,7 +16,7 @@ const products = [
     title: 'All Supplier Bundle',
     image: '/images/all-suppliers.png',
     price: '$49.99',
-    original: '$89.00',
+    original: '$99.99',
     subtitle: '💼 Most Value',
     stripe: 'https://buy.stripe.com/eVqaEPfDC5DZeqjfDYbfO02',
     details: 'Includes every verified vendor across all categories: tech, fragrance, sneakers & more.'
@@ -25,7 +25,7 @@ const products = [
     title: 'Fragrance Plug Guide',
     image: '/images/fragrance-guide.png',
     price: '$19.99',
-    original: '$39.00',
+    original: '$49.99',
     subtitle: '🔥 Trending',
     stripe: 'https://buy.stripe.com/7sYdR1ezyeav3LF4ZkbfO03',
     details: 'Direct vendors for high-demand fragrances including Creed, Dior, and more.'
@@ -34,7 +34,7 @@ const products = [
     title: 'Sneaker Plug',
     image: '/images/sneaker-plug.png',
     price: '$39.99',
-    original: '$79.00',
+    original: '$79.99',
     subtitle: '🏃️‍♂️ Fast Shipping',
     stripe: 'https://buy.stripe.com/28EdR11MMgiD95ZbnIbfO04',
     details: 'Verified suppliers for 1:1 sneakers with fast shipping and high quality.'
@@ -43,7 +43,7 @@ const products = [
     title: 'Custom Vendor Request',
     image: '/images/custom-vendor.png',
     price: '$29.99',
-    original: '$69.00',
+    original: '$59.99',
     subtitle: '💬 Tailored Plug',
     stripe: 'https://buy.stripe.com/28EfZ92QQfezdmf2RcbfO05',
     details: 'Can’t find what you need? Submit a custom request and we’ll source it.'
@@ -52,7 +52,7 @@ const products = [
     title: 'Starter Flip Guide',
     image: '/images/starter-guide.png',
     price: '$14.99',
-    original: '$39.00',
+    original: '$39.99',
     subtitle: '⚡ Quick Start',
     stripe: 'https://buy.stripe.com/00waEPfDCaYj3LF1N8bfO06',
     details: 'Get started flipping with minimal budget and easy wins.'
@@ -111,7 +111,7 @@ export default function CartzysPage() {
 
       <header className="text-center py-10">
         <img src="/images/logo.png" alt="Cartzys Logo" className="mx-auto w-24 mb-2" />
-        <h1 className="text-lg font-semibold text-gray-300">Premium Vendors • Premium Discord</h1>
+        <h1 className="text-lg font-semibold text-gray-300">Premium Vendors </h1>
       </header>
 
       <main className="px-4 sm:px-6 pb-20 max-w-6xl mx-auto">
