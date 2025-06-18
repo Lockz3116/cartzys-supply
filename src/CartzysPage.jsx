@@ -92,7 +92,7 @@ const faqs = [
 
 export default function CartzysPage() {
   const [scrollOffset, setScrollOffset] = useState(0);
-  const banner = `INSTANT DELIVERY 🧃 | 50% OFF ALL SUPPLIER BUNDLE ✅ | NOT A PHYSICAL PRODUCT 💃 | JOIN RESELL PLUGS 🧰 `.repeat(6);
+  const banner = 'INSTANT DELIVERY 💵 | 50% OFF ALL SUPPLIER BUNDLE ✅ | NOT A PHYSICAL PRODUCT 🏃 | JOIN RESELL PLUGS 🧳    INSTANT DELIVERY 💵 | 50% OFF ALL SUPPLIER BUNDLE ✅ | NOT A PHYSICAL PRODUCT 🏃 | JOIN RESELL PLUGS 🧳';
 
   useEffect(() => {
     const interval = setInterval(() => {
