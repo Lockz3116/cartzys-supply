@@ -99,8 +99,8 @@ export default function CartzysPage() {
       <div className="w-full bg-black overflow-hidden border-b border-zinc-800 relative">
         <div className="absolute left-0 top-0 h-full w-10 bg-gradient-to-r from-black to-transparent z-10"></div>
         <div className="absolute right-0 top-0 h-full w-10 bg-gradient-to-l from-black to-transparent z-10"></div>
-        <div className="flex animate-marquee whitespace-nowrap text-white text-xs sm:text-sm py-2 [animation-duration:25s]">
-          {[...Array(4)].map((_, i) => (
+        <div className="flex animate-marquee whitespace-nowrap text-white text-xs sm:text-sm py-2 [animation-duration:50s]">
+          {[...Array(8)].map((_, i) => (
             <span key={i} className="px-8">
               {bannerText}
             </span>
