@@ -119,17 +119,17 @@ export default function CartzysPage() {
 
       <main className="px-4 sm:px-6 pb-20 max-w-6xl mx-auto">
         <h2 className="text-center text-xl font-semibold uppercase tracking-widest mb-8">THE PLUGS.</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
           {products.map((p, idx) => (
             <div key={idx} className="bg-zinc-900 p-4 rounded-xl shadow-md text-center relative">
               <div className="absolute top-2 right-2 bg-blue-600 text-xs text-white font-bold px-2 py-1 rounded shadow-md shadow-blue-400/40">SALE</div>
-              <img src={p.image} alt={p.title} className="w-full h-44 object-contain mb-3" />
-              <h3 className="text-white font-bold text-md mb-1">{p.title}</h3>
+              <img src={p.image} alt={p.title} className="w-full h-40 sm:h-44 object-contain mb-3" />
+              <h3 className="text-white font-bold text-md mb-1 leading-tight">{p.title}</h3>
               <p className="text-gray-500 text-sm line-through">{p.original}</p>
               <p className="text-blue-400 text-lg font-bold drop-shadow-[0_0_5px_rgba(66,133,244,0.8)]">{p.price}</p>
               <details className="text-xs mt-2 cursor-pointer">
                 <summary className="text-blue-500 underline">What you'll get</summary>
-                <p className="text-gray-400 mt-1">{p.details}</p>
+                <p className="text-gray-400 mt-1 text-left">{p.details}</p>
               </details>
               <a href={p.stripe} target="_blank" rel="noreferrer">
                 <button className="w-full mt-3 bg-[#4285F4] hover:bg-blue-700 px-4 py-2 rounded font-semibold text-white text-xs uppercase shadow-lg shadow-blue-500/30">Buy Now</button>
