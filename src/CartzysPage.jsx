@@ -1,4 +1,4 @@
-// Fully working CartzysPage - with full product set, FAQs, marquee banner (cabSELLS style + blue theme w/ glow + infinite wrap)
+// Fully working CartzysPage - homepage loads with smooth infinite scrolling banner (slow, seamless, no overlap)
 import React from 'react';
 import { HelpCircle, ChevronDown } from 'lucide-react';
 
@@ -99,8 +99,8 @@ export default function CartzysPage() {
       <div className="w-full bg-black overflow-hidden border-b border-zinc-800 relative">
         <div className="absolute left-0 top-0 h-full w-10 bg-gradient-to-r from-black to-transparent z-10"></div>
         <div className="absolute right-0 top-0 h-full w-10 bg-gradient-to-l from-black to-transparent z-10"></div>
-        <div className="flex animate-marquee whitespace-nowrap text-white text-xs sm:text-sm py-2 [animation-duration:50s]">
-          {[...Array(8)].map((_, i) => (
+        <div className="flex whitespace-nowrap text-white text-xs sm:text-sm py-2 [animation:marquee_90s_linear_infinite]">
+          {[...Array(10)].map((_, i) => (
             <span key={i} className="px-8">
               {bannerText}
             </span>
