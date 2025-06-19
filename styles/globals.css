@@ -1,17 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@keyframes marquee {
+@keyframes marquee-xl {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
-
-.animate-marquee {
-  display: inline-block;
-  animation: marquee 10s linear infinite;
-  white-space: nowrap;
+.animate-marquee-xl {
+  animation: marquee-xl 120s linear infinite;
 }
