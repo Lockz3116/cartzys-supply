@@ -16,6 +16,6 @@
 
 @media (max-width: 640px) {
   .animate-marquee-xl {
-    animation-duration: 30s; /* ⏩ faster on small screens */
+    animation-duration: 10s; /* ⏩ faster on small screens */
   }
 }
