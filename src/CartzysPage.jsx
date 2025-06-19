@@ -1,4 +1,4 @@
-// Fully working CartzysPage - homepage loads with smooth infinite scrolling banner (slow, seamless, no overlap)
+// Fully working CartzysPage - homepage loads with perfect seamless marquee
 import React from 'react';
 import { HelpCircle, ChevronDown } from 'lucide-react';
 
@@ -92,19 +92,21 @@ const faqs = [
 
 export default function CartzysPage() {
   const bannerText =
-    'INSTANT DELIVERY 📦     50% OFF ALL SUPPLIER BUNDLE ✅     NOT A PHYSICAL PRODUCT 🚨     JOIN RESELL PLUGS 🛍️';
+    'INSTANT DELIVERY 📦  •  50% OFF ALL SUPPLIER BUNDLE ✅  •  NOT A PHYSICAL PRODUCT 🚨  •  JOIN RESELL PLUGS 🛍️  ';
 
   return (
     <div className="relative text-white min-h-screen bg-[url('/images/bg-money.jpg')] bg-cover bg-center bg-no-repeat">
       <div className="w-full bg-black overflow-hidden border-b border-zinc-800 relative">
         <div className="absolute left-0 top-0 h-full w-10 bg-gradient-to-r from-black to-transparent z-10"></div>
         <div className="absolute right-0 top-0 h-full w-10 bg-gradient-to-l from-black to-transparent z-10"></div>
-        <div className="flex whitespace-nowrap text-white text-xs sm:text-sm py-2 [animation:marquee_90s_linear_infinite]">
-          {[...Array(10)].map((_, i) => (
-            <span key={i} className="px-8">
-              {bannerText}
-            </span>
-          ))}
+        <div className="flex whitespace-nowrap text-white text-xs sm:text-sm py-2 animate-marquee">
+          <div className="flex gap-16">
+            {[...Array(3)].map((_, i) => (
+              <span key={i} className="inline-block min-w-max">
+                {bannerText}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
 
