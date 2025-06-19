@@ -1,5 +1,5 @@
-// Fully working CartzysPage - now with fixed styled FAQ icons and full product set
-import React, { useState, useEffect } from 'react';
+// Fully working CartzysPage - with full product set, FAQs, marquee banner (cabSELLS style + blue theme w/ glow on everything)
+import React from 'react';
 import { HelpCircle, ChevronDown } from 'lucide-react';
 
 const products = [
@@ -91,21 +91,14 @@ const faqs = [
 ];
 
 export default function CartzysPage() {
-  const [scrollOffset, setScrollOffset] = useState(0);
-  const banner = (' INSTANT DELIVERY 💵 | 50% OFF ALL SUPPLIER BUNDLE ✅ | NOT A PHYSICAL PRODUCT 🏃 | JOIN RESELL PLUGS 🧳 ').repeat(2);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setScrollOffset((prev) => (prev + 1) % (banner.length * 8));
-    }, 20);
-    return () => clearInterval(interval);
-  }, [banner.length]);
-
   return (
     <div className="relative text-white min-h-screen bg-[url('/images/bg-money.jpg')] bg-cover bg-center bg-no-repeat">
-      <div className="w-full bg-black text-xs py-2 overflow-hidden whitespace-nowrap border-b border-zinc-800">
-        <div style={{ transform: `translateX(-${scrollOffset}px)` }} className="inline-block min-w-full">
-          {banner}
+      <div className="w-full bg-black overflow-hidden border-b border-zinc-800">
+        <div className="animate-marquee whitespace-nowrap text-white text-xs sm:text-sm py-2">
+          <span className="inline-block px-4">
+            INSTANT DELIVERY 📦 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 50% OFF ALL SUPPLIER BUNDLE ✅ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NOT A PHYSICAL PRODUCT 🚨 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JOIN RESELL PLUGS 🛍️ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            INSTANT DELIVERY 📦 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 50% OFF ALL SUPPLIER BUNDLE ✅ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NOT A PHYSICAL PRODUCT 🚨 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JOIN RESELL PLUGS 🛍️
+          </span>
         </div>
       </div>
 
@@ -119,17 +112,17 @@ export default function CartzysPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {products.map((p, idx) => (
             <div key={idx} className="bg-zinc-900 p-4 rounded-xl shadow-md text-center relative">
-              <div className="absolute top-2 right-2 bg-blue-600 text-xs text-white font-bold px-2 py-1 rounded">SALE</div>
+              <div className="absolute top-2 right-2 bg-blue-600 text-xs text-white font-bold px-2 py-1 rounded shadow-md shadow-blue-400/40">SALE</div>
               <img src={p.image} alt={p.title} className="w-full h-44 object-contain mb-3" />
               <h3 className="text-white font-bold text-md mb-1">{p.title}</h3>
               <p className="text-gray-500 text-sm line-through">{p.original}</p>
-              <p className="text-blue-400 text-lg font-bold">{p.price}</p>
+              <p className="text-blue-400 text-lg font-bold drop-shadow-[0_0_5px_rgba(66,133,244,0.8)]">{p.price}</p>
               <details className="text-xs mt-2 cursor-pointer">
                 <summary className="text-blue-500 underline">What you'll get</summary>
                 <p className="text-gray-400 mt-1">{p.details}</p>
               </details>
               <a href={p.stripe} target="_blank" rel="noreferrer">
-                <button className="w-full mt-3 bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded font-semibold text-white text-xs uppercase">Buy Now</button>
+                <button className="w-full mt-3 bg-[#4285F4] hover:bg-blue-700 px-4 py-2 rounded font-semibold text-white text-xs uppercase shadow-lg shadow-blue-500/30">Buy Now</button>
               </a>
             </div>
           ))}
