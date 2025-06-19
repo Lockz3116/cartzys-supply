@@ -13,3 +13,9 @@
 .animate-marquee-xl {
   animation: marquee-xl 30s linear infinite;
 }
+
+@media (max-width: 640px) {
+  .animate-marquee-xl {
+    animation-duration: 30s; /* ⏩ faster on small screens */
+  }
+}
