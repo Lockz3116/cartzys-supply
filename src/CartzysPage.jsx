@@ -91,22 +91,24 @@ const faqs = [
 ];
 
 export default function CartzysPage() {
-  const bannerText =
-    'INSTANT DELIVERY 📦        50% OFF ALL SUPPLIER BUNDLE ✅        NOT A PHYSICAL PRODUCT 🚨        JOIN RESELL PLUGS 🛍️        ';
+  const bannerItems = [
+    'INSTANT DELIVERY 📬',
+    '50% OFF ALL SUPPLIER BUNDLE ✅',
+    'NOT A PHYSICAL PRODUCT 🔥',
+    'JOIN RESELL PLUGS 🛒'
+  ];
 
   return (
     <div className="relative text-white min-h-screen bg-[url('/images/bg-money.jpg')] bg-cover bg-center bg-no-repeat">
-      <div className="w-full bg-black overflow-hidden border-b border-zinc-800 relative">
-        <div className="absolute left-0 top-0 h-full w-10 bg-gradient-to-r from-black to-transparent z-10"></div>
-        <div className="absolute right-0 top-0 h-full w-10 bg-gradient-to-l from-black to-transparent z-10"></div>
-        <div className="relative whitespace-nowrap text-white text-xs sm:text-sm py-2">
-          <div className="absolute animate-marquee-xl inline-flex min-w-full whitespace-nowrap">
-            {[...Array(12)].map((_, i) => (
-              <span key={i} className="mx-12">
-                {bannerText}
+      <div className="w-full bg-black overflow-hidden border-b border-zinc-800">
+        <div className="animate-marquee-xl flex whitespace-nowrap gap-16 text-white text-xs sm:text-sm py-2 px-4">
+          {Array.from({ length: 10 }).flatMap((_, i) =>
+            bannerItems.map((item, index) => (
+              <span key={`${i}-${index}`} className="px-4">
+                {item}
               </span>
-            ))}
-          </div>
+            ))
+          )}
         </div>
       </div>
 
