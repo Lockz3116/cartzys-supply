@@ -1,4 +1,4 @@
-// Fully working CartzysPage - with full product set, FAQs, marquee banner (cabSELLS style + blue theme w/ glow on everything)
+// Fully working CartzysPage - with full product set, FAQs, marquee banner (cabSELLS style + blue theme w/ glow + infinite wrap)
 import React from 'react';
 import { HelpCircle, ChevronDown } from 'lucide-react';
 
@@ -91,14 +91,20 @@ const faqs = [
 ];
 
 export default function CartzysPage() {
+  const bannerText =
+    'INSTANT DELIVERY 📦     50% OFF ALL SUPPLIER BUNDLE ✅     NOT A PHYSICAL PRODUCT 🚨     JOIN RESELL PLUGS 🛍️';
+
   return (
     <div className="relative text-white min-h-screen bg-[url('/images/bg-money.jpg')] bg-cover bg-center bg-no-repeat">
-      <div className="w-full bg-black overflow-hidden border-b border-zinc-800">
-        <div className="animate-marquee whitespace-nowrap text-white text-xs sm:text-sm py-2">
-          <span className="inline-block px-4">
-            INSTANT DELIVERY 📦 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 50% OFF ALL SUPPLIER BUNDLE ✅ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NOT A PHYSICAL PRODUCT 🚨 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JOIN RESELL PLUGS 🛍️ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            INSTANT DELIVERY 📦 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 50% OFF ALL SUPPLIER BUNDLE ✅ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NOT A PHYSICAL PRODUCT 🚨 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JOIN RESELL PLUGS 🛍️
-          </span>
+      <div className="w-full bg-black overflow-hidden border-b border-zinc-800 relative">
+        <div className="absolute left-0 top-0 h-full w-10 bg-gradient-to-r from-black to-transparent z-10"></div>
+        <div className="absolute right-0 top-0 h-full w-10 bg-gradient-to-l from-black to-transparent z-10"></div>
+        <div className="flex animate-marquee whitespace-nowrap text-white text-xs sm:text-sm py-2 [animation-duration:25s]">
+          {[...Array(4)].map((_, i) => (
+            <span key={i} className="px-8">
+              {bannerText}
+            </span>
+          ))}
         </div>
       </div>
 
