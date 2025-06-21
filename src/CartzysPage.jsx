@@ -1,4 +1,4 @@
-// Fully working CartzysPage - homepage loads with perfect seamless marquee
+// Fully working CartzysPage - homepage loads with perfect seamless marquee and upgraded UI
 import React from 'react';
 import { HelpCircle, ChevronDown } from 'lucide-react';
 
@@ -10,7 +10,15 @@ const products = [
     original: '$199.99',
     subtitle: '🔥 Best Seller',
     stripe: 'https://buy.stripe.com/aFa14f1MM2rN5TNdvQbfO01',
-    details: 'Full course teaching you how to flip products from scratch using real suppliers. Updated monthly.'
+    details: `The ultimate beginner-to-pro flipping course. Learn how to start, scale, and automate your reselling business with zero prior experience.
+
+You’ll get:
+• 30+ HD video lessons walking you through setup to sales
+• Secret vendor list with plug pricing
+• Monthly strategy updates
+• Templates, scripts, and checklists
+
+Perfect for anyone serious about resell income in 2024.`
   },
   {
     title: 'All Supplier Bundle',
@@ -19,7 +27,15 @@ const products = [
     original: '$99.99',
     subtitle: '💼 Most Value',
     stripe: 'https://buy.stripe.com/eVqaEPfDC5DZeqjfDYbfO02',
-    details: 'Includes every verified vendor across all categories: tech, fragrance, sneakers & more.'
+    details: `Get every trusted plug in one bundle.
+
+Includes:
+• Reselling Starter Guide
+• 2x Watch Vendors
+• Clothes + Tech Vendors
+• Cologne, Sneaker, Bag suppliers
+
+Trusted by 700+ full-time flippers. Real plugs, low minimums, high ROI.`
   },
   {
     title: 'Fragrance Plug Guide',
@@ -28,7 +44,13 @@ const products = [
     original: '$49.99',
     subtitle: '🔥 Trending',
     stripe: 'https://buy.stripe.com/7sYdR1ezyeav3LF4ZkbfO03',
-    details: 'Direct vendors for high-demand fragrances including Creed, Dior, and more.'
+    details: `Smell like $1,000 for $20. Unlock access to premium plug vendors for:
+
+• Creed Aventus, Dior Sauvage, Baccarat Rouge
+• Bulk pricing for personal use or flipping
+• Same scent — fraction of the cost
+
+Instant download. Real tested vendors.`
   },
   {
     title: 'Sneaker Plug',
@@ -37,7 +59,14 @@ const products = [
     original: '$79.99',
     subtitle: '🏃️‍♂️ Fast Shipping',
     stripe: 'https://buy.stripe.com/28EdR11MMgiD95ZbnIbfO04',
-    details: 'Verified suppliers for 1:1 sneakers with fast shipping and high quality.'
+    details: `The #1 sneaker resale source.
+
+What’s inside:
+• 1:1 plug vendors for Yeezys, Jordans, Dunks
+• Verified quality + fast shipping
+• Connect direct, no markup
+
+Over 100+ flippers using this to move heat weekly.`
   },
   {
     title: 'Custom Vendor Request',
@@ -46,7 +75,15 @@ const products = [
     original: '$59.99',
     subtitle: '💬 Tailored Plug',
     stripe: 'https://buy.stripe.com/28EfZ92QQfezdmf2RcbfO05',
-    details: 'Can’t find what you need? Submit a custom request and we’ll source it.'
+    details: `Can’t find a specific product?
+We’ll find the plug for you within 24 hours.
+
+Ideal for:
+• Niche or rare items
+• Private label brand owners
+• Exclusive resellers
+
+Message us post-purchase — we’ll hunt it down.`
   },
   {
     title: 'Starter Flip Guide',
@@ -55,7 +92,14 @@ const products = [
     original: '$39.99',
     subtitle: '⚡ Quick Start',
     stripe: 'https://buy.stripe.com/00waEPfDCaYj3LF1N8bfO06',
-    details: 'Get started flipping with minimal budget and easy wins.'
+    details: `Want to flip with $50 or less?
+
+This mini-guide breaks down:
+• Best beginner flips by category
+• Where to source them cheap
+• Sell tactics that work fast
+
+Fast wins, fast cash. Perfect side hustle to test the waters.`
   }
 ];
 
@@ -86,7 +130,7 @@ const faqs = [
   },
   {
     question: 'How much do the vendors charge for products?',
-    answer: 'The vendors charge anywhere from $20–$90 per product. Some are cheaper than others, this depends on the product'
+    answer: 'The vendors charge anywhere from $20–$90 per product. Some are cheaper than others, this depends on the product.'
   }
 ];
 
@@ -122,14 +166,16 @@ export default function CartzysPage() {
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
           {products.map((p, idx) => (
             <div key={idx} className="bg-zinc-900 p-4 rounded-xl shadow-md text-center relative">
-              <div className="absolute top-2 right-2 bg-blue-600 text-xs text-white font-bold px-2 py-1 rounded shadow-md shadow-blue-400/40">SALE</div>
+              <div className="absolute top-2 right-2 bg-green-600 text-xs text-white font-bold px-2 py-1 rounded shadow-md shadow-green-400/40">{p.subtitle}</div>
               <img src={p.image} alt={p.title} className="w-full h-40 sm:h-44 object-contain mb-3" />
               <h3 className="text-white font-bold text-md mb-1 leading-tight">{p.title}</h3>
               <p className="text-gray-500 text-sm line-through">{p.original}</p>
               <p className="text-blue-400 text-lg font-bold drop-shadow-[0_0_5px_rgba(66,133,244,0.8)]">{p.price}</p>
               <details className="text-xs mt-2 cursor-pointer">
-                <summary className="text-blue-500 underline">What you'll get</summary>
-                <p className="text-gray-400 mt-1 text-left">{p.details}</p>
+                <summary className="text-green-400 underline">What you'll get</summary>
+                <div className="text-gray-300 mt-2 bg-green-900/30 p-2 rounded text-left whitespace-pre-line text-[0.75rem] leading-relaxed">
+                  {p.details}
+                </div>
               </details>
               <a href={p.stripe} target="_blank" rel="noreferrer">
                 <button className="w-full mt-3 bg-[#4285F4] hover:bg-blue-700 px-4 py-2 rounded font-semibold text-white text-xs uppercase shadow-lg shadow-blue-500/30">Buy Now</button>
