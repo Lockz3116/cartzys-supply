@@ -18,7 +18,7 @@ You’ll get:
 • Monthly strategy updates
 • Templates, scripts, and checklists
 
-Perfect for anyone serious about resell income in 2024.`
+Perfect for anyone serious about resell income in 2025.`
   },
   {
     title: 'All Supplier Bundle',
