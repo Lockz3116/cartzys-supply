@@ -6,7 +6,7 @@ const products = [
   {
     title: 'Resell Blueprint: Full Course',
     image: '/images/resell-blueprint.png',
-    price: '$99.99',
+    price: '$49.99',
     original: '$199.99',
     subtitle: '🔥 Best Seller',
     stripe: 'https://buy.stripe.com/aFa14f1MM2rN5TNdvQbfO01',
@@ -23,7 +23,7 @@ Perfect for anyone serious about resell income in 2025.`
   {
     title: 'All Supplier Bundle',
     image: '/images/all-suppliers.png',
-    price: '$49.99',
+    price: '$29.99',
     original: '$99.99',
     subtitle: '💼 Most Value',
     stripe: 'https://buy.stripe.com/eVqaEPfDC5DZeqjfDYbfO02',
@@ -40,11 +40,11 @@ Trusted by 700+ full-time flippers. Real plugs, low minimums, high ROI.`
   {
     title: 'Fragrance Plug Guide',
     image: '/images/fragrance-guide.png',
-    price: '$19.99',
+    price: '$14.99',
     original: '$49.99',
     subtitle: '🔥 Trending',
     stripe: 'https://buy.stripe.com/7sYdR1ezyeav3LF4ZkbfO03',
-    details: `Smell like $1,000 for $20. Unlock access to premium plug vendors for:
+    details: `Smell like $1,000 for $14.99. Unlock access to premium plug vendors for:
 
 • Creed Aventus, Dior Sauvage, Baccarat Rouge
 • Bulk pricing for personal use or flipping
@@ -55,7 +55,7 @@ Instant download. Real tested vendors.`
   {
     title: 'Sneaker Plug',
     image: '/images/sneaker-plug.png',
-    price: '$39.99',
+    price: '$29.99',
     original: '$79.99',
     subtitle: '🏃️‍♂️ Fast Shipping',
     stripe: 'https://buy.stripe.com/28EdR11MMgiD95ZbnIbfO04',
@@ -71,7 +71,7 @@ Over 100+ flippers using this to move heat weekly.`
   {
     title: 'Custom Vendor Request',
     image: '/images/custom-vendor.png',
-    price: '$29.99',
+    price: '$19.99',
     original: '$59.99',
     subtitle: '💬 Tailored Plug',
     stripe: 'https://buy.stripe.com/28EfZ92QQfezdmf2RcbfO05',
@@ -88,7 +88,7 @@ Message us post-purchase — we’ll hunt it down.`
   {
     title: 'Starter Flip Guide',
     image: '/images/starter-guide.png',
-    price: '$14.99',
+    price: '$9.99',
     original: '$39.99',
     subtitle: '⚡ Quick Start',
     stripe: 'https://buy.stripe.com/00waEPfDCaYj3LF1N8bfO06',
