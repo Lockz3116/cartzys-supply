@@ -23,7 +23,7 @@ Perfect for anyone serious about resell income in 2025.`
   {
     title: 'All Supplier Bundle',
     image: '/images/all-suppliers.png',
-    price: '$29.99',
+    price: '$39.99',
     original: '$99.99',
     subtitle: '💼 Most Value',
     stripe: 'https://buy.stripe.com/eVqaEPfDC5DZeqjfDYbfO02',
