@@ -9,7 +9,7 @@ const products = [
     price: '$49.99',
     original: '$199.99',
     subtitle: '🔥 Best Seller',
-    stripe: 'https://buy.stripe.com/aFa14f1MM2rN5TNdvQbfO01',
+    stripe: 'https://buy.stripe.com/7sY9AL0IIgiD5TNcrMbfO08',
     details: `The ultimate beginner-to-pro flipping course. Learn how to start, scale, and automate your reselling business with zero prior experience.
 
 You’ll get:
@@ -26,7 +26,7 @@ Perfect for anyone serious about resell income in 2025.`
     price: '$39.99',
     original: '$99.99',
     subtitle: '💼 Most Value',
-    stripe: 'https://buy.stripe.com/eVqaEPfDC5DZeqjfDYbfO02',
+    stripe: 'https://buy.stripe.com/5kQaEPezyc2n3LF1N8bfO09',
     details: `Get every trusted plug in one bundle.
 
 Includes:
@@ -43,7 +43,7 @@ Trusted by 700+ full-time flippers. Real plugs, low minimums, high ROI.`
     price: '$14.99',
     original: '$49.99',
     subtitle: '🔥 Trending',
-    stripe: 'https://buy.stripe.com/7sYdR1ezyeav3LF4ZkbfO03',
+    stripe: 'https://buy.stripe.com/5kQbITezyeavgyrbnIbfO0a',
     details: `Smell like $1,000 for $14.99. Unlock access to premium plug vendors for:
 
 • Creed Aventus, Dior Sauvage, Baccarat Rouge
@@ -58,7 +58,7 @@ Instant download. Real tested vendors.`
     price: '$29.99',
     original: '$79.99',
     subtitle: '🏃️‍♂️ Fast Shipping',
-    stripe: 'https://buy.stripe.com/28EdR11MMgiD95ZbnIbfO04',
+    stripe: 'https://buy.stripe.com/7sYfZ9ezy6I3dmf8bwbfO0b',
     details: `The #1 sneaker resale source.
 
 What’s inside:
@@ -74,7 +74,7 @@ Over 100+ flippers using this to move heat weekly.`
     price: '$19.99',
     original: '$59.99',
     subtitle: '💬 Tailored Plug',
-    stripe: 'https://buy.stripe.com/28EfZ92QQfezdmf2RcbfO05',
+    stripe: 'https://buy.stripe.com/dRmcMXezyaYjgyr1N8bfO0c',
     details: `Can’t find a specific product?
 We’ll find the plug for you within 24 hours.
 
@@ -91,7 +91,7 @@ Message us post-purchase — we’ll hunt it down.`
     price: '$9.99',
     original: '$39.99',
     subtitle: '⚡ Quick Start',
-    stripe: 'https://buy.stripe.com/00waEPfDCaYj3LF1N8bfO06',
+    stripe: 'https://buy.stripe.com/cNi5kv8ba9UfcibbnIbfO07',
     details: `Want to flip with $50 or less?
 
 This mini-guide breaks down:
