@@ -1,1 +1,0 @@
-self.__REACT_LOADABLE_MANIFEST="{\"index.js -> ../src/CartzysPage\":{\"id\":\"index.js -> ../src/CartzysPage\",\"files\":[\"static/chunks/src_CartzysPage_jsx.js\"]}}"
